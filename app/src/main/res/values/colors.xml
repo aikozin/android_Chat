@@ -8,8 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="card_view_top">#81946217</color>
-    <color name="card_view_bottom">#81946217</color>
-    <color name="message_edit_img">#99876E23</color>
-    <color name="message_edit_print">#99876E23</color>
+    <color name="сhat_background">#C6EEC3</color>
+    <color name="сhat_top_line">#2F2F2F</color>
+    <color name="background_chat_edit">#FFFFFFFF</color>
 </resources>
