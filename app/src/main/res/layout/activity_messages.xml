@@ -36,16 +36,13 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/bottom_line">
 
-                <view
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/chat_messages"
-                    class="androidx.appcompat.app.AlertController$RecycleListView"
                     android:layout_width="340dp"
                     android:layout_height="wrap_content"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                </view>
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -73,7 +70,7 @@
                         android:background="@color/background_chat_edit">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/attach_an_file_cardview"
+                            android:id="@+id/attach_an_file"
                             android:layout_width="54dp"
                             android:layout_height="match_parent"
                             app:layout_constraintLeft_toLeftOf="parent"
@@ -84,7 +81,6 @@
                             android:focusable="true">
 
                             <ImageView
-                                android:id="@+id/attach_an_file"
                                 android:layout_width="54dp"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/baseline_push_pin_40"
@@ -95,16 +91,17 @@
                         </androidx.cardview.widget.CardView>
 
                             <EditText
+                                android:id="@+id/print_a_messages"
                                 android:layout_width="256dp"
                                 android:layout_height="54dp"
-                                app:layout_constraintLeft_toRightOf="@+id/attach_an_file_cardview"
-                                app:layout_constraintRight_toLeftOf="@+id/send_a_message_cardview"
+                                app:layout_constraintLeft_toRightOf="@+id/attach_an_file"
+                                app:layout_constraintRight_toLeftOf="@+id/send_a_message"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 android:hint="Сообщение..."/>
 
                             <androidx.cardview.widget.CardView
-                                android:id="@+id/send_a_message_cardview"
+                                android:id="@+id/send_a_message"
                                 android:layout_width="54dp"
                                 android:layout_height="match_parent"
                                 app:layout_constraintRight_toRightOf="parent"
@@ -115,7 +112,6 @@
                                 android:focusable="true">
 
                                 <ImageView
-                                    android:id="@+id/send_a_message"
                                     android:layout_width="54dp"
                                     android:layout_height="match_parent"
                                     android:src="@drawable/baseline_send_40"
